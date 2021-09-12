@@ -33,7 +33,7 @@ dependencies {
   implementation 'jstl:jstl:1.2'
 
 // Add your dependencies here.
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0-rc2'
@@ -59,7 +59,7 @@ appengineStage.dependsOn test
 
 appengine {  // App Engine tasks configuration
   deploy {   // deploy configuration
-    projectId = System.getenv('GOOGLE_CLOUD_PROJECT')
+    projectId = 'GCLOUD_CONFIG'
     version = '1'
   }
 }

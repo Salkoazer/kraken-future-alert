@@ -53,13 +53,6 @@ dependencies {
   testImplementation 'com.google.appengine:appengine-tools-sdk:+'
 }
 
-dependencyManagement {
-	imports {
-		mavenBom "com.google.cloud:spring-cloud-gcp-dependencies:${springCloudGcpVersion}"
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-	}
-}
-
 // Always run unit tests
 appengineDeploy.dependsOn test
 appengineStage.dependsOn test

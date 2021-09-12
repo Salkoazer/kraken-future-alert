@@ -13,9 +13,9 @@ plugins {
     id 'org.springframework.boot' version '2.5.4'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'war'
 }
-                             // standard Java tasks
-apply plugin: 'war'                               // standard Web Archive plugin
+
 apply plugin: 'com.google.cloud.tools.appengine'  // App Engine tasks
 
 repositories {   // repositories for Jar's you access in your code
@@ -59,8 +59,8 @@ appengineStage.dependsOn test
 
 appengine {  // App Engine tasks configuration
   deploy {   // deploy configuration
-    projectId = 'GCLOUD_CONFIG'
-    version = '1'
+    projectId = 'kraken-future-alert'
+    version = '2'
   }
 }
 

@@ -63,6 +63,8 @@ public class KrakenappApplication {
         private static void run() {
             while(true) {
                 
+                System.out.println("Running...");
+                
                 float margin = (((futureValue() / liveValue()) - 1) * 100);
                 
                 if (margin > 4) {
